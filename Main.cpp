@@ -89,7 +89,11 @@ int main(){
             cin>>pos;
             cout<<"-------------------------------------"<<endl;
         }
-        delete m[pos];
+        m.erase(m.begins()+pos, m.begins()+pos+1);
+        //cout<<"-------------------------------------"<<endl;
+        cout<<"Matriz eliminado con exito"<<endl;
+        cout<<"-------------------------------------"<<endl;
+        //delete m[pos];
     }
     if (op==4) {
 
