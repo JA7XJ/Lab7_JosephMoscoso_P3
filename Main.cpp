@@ -89,7 +89,7 @@ int main(){
             cin>>pos;
             cout<<"-------------------------------------"<<endl;
         }
-        m.erase(m.begins()+pos, m.begins()+pos+1);
+        m.erase(m.begin()+pos, m.begin()+pos+1);
         //cout<<"-------------------------------------"<<endl;
         cout<<"Matriz eliminado con exito"<<endl;
         cout<<"-------------------------------------"<<endl;
