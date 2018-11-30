@@ -22,12 +22,13 @@ class Matriz{
     string getNombre();
     void setNombre(string);
     void mostrar();
-    int** operator | (int**);
-    int operator ++ ();
-    int operator -- ();
-    int operator > (int);
-    int** operator + (int);
-    int** operator * (int);
+    int** getM();
+    Matriz operator |(Matriz);
+    int operator ++();
+    int operator --();
+    int operator >(int);
+    int** operator +(int);
+    int** operator *(int);
 };
 
 #endif

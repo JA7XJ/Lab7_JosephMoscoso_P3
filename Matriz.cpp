@@ -180,8 +180,23 @@ void Matriz::mostrar(){
   cout<<endl;
 }
 
-int** Matriz::operator |(int** x){
+int** Matriz::getM(){
+    return m;
+}
 
+Matriz Matriz::operator |(Matriz x){
+    int** retVal=NULL;
+    retVal=new int*[size];
+    for(int i=0; i<size;i++){
+        retVal[i]=new int[size];
+    }
+    for (int i = 0; i < x.getSize(); i++) {
+        for (int j = 0; j < x.getSize(); j++) {
+            retVal[i][j]=this->m[i][j]+x.getM()[i][j];
+        }
+    }
+    Matriz xx(size,"Resultado",retVal);
+    return xx;
 }
 
 int Matriz::operator ++(){
