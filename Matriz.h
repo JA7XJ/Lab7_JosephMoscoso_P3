@@ -12,14 +12,16 @@ class Matriz{
     int** m;
   public:
     Matriz();
-    Matriz(int,int,string,int**);
+    Matriz(int,string,int**);
     ~Matriz();
+    void cdeterminante(int);
     int getSize();
     void setSize(int);
     int getDeterminante();
     void setDeterminante(int);
     string getNombre();
     void setNombre(string);
+    void mostrar();
     int** operator | (int**);
     int operator ++ ();
     int operator -- ();
